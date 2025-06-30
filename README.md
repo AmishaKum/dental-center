@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+🦷 ENTNT Dental Center – React Patient & Admin Portal
+A responsive dental clinic management web app built with React, React Router, and Tailwind CSS. It supports role-based login, appointment tracking, profile management, and an admin dashboard with KPIs.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Features
+👨‍⚕️ Admin
+Secure login (email & password)
 
-## Available Scripts
+Dashboard with KPIs (total patients, revenue, treatments)
 
-In the project directory, you can run:
+Patient management (Add, Edit, Delete)
 
-### `npm start`
+Record & view treatment/incident history
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+View appointments in a calendar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🧑 Patient
+Login with contact number (no password required)
 
-### `npm test`
+View upcoming appointments
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Edit and view profile
 
-### `npm run build`
+View treatment history
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📁 Folder Structure
+pgsql
+Copy
+Edit
+src/
+├── components/         # Layouts and ProtectedRoute wrapper
+├── pages/
+│   ├── admin/          # Admin views: Dashboard, Patients, Calendar, Incidents
+│   └── patient/        # Patient views: Dashboard, Profile
+├── data/               # Initial seed data (users, patients)
+├── App.js              # Entry point with localStorage seeding
+├── AppRouter.js        # Role-based routes using React Router
+🔐 Credentials
+Role	Login Info
+Admin	admin@entnt.in / admin123
+Patient	Contact: 1234567890 (no password)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠️ Tech Stack
+React 19
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React Router DOM v7
 
-### `npm run eject`
+Tailwind CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+LocalStorage (as mock backend)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React Calendar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+PostCSS + Autoprefixer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+⚙️ Getting Started
+1. 📦 Install Dependencies
+bash
+Copy
+Edit
+npm install
+2. 🧪 Run the App
+bash
+Copy
+Edit
+npm start
+Open http://localhost:3000 in your browser.
 
-## Learn More
+3. 📦 Build for Production
+bash
+Copy
+Edit
+npm run build
+4. 🧹 Reset Local Storage (if needed)
+To reinitialize users/patients data:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open Developer Tools → Application tab → Local Storage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clear the following keys: users, patients, incidents
 
-### Code Splitting
+Refresh the app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👩‍💻 Author
+Assignment developed by Amisha Kumari for ENTNT Dental Center.
 
-### Analyzing the Bundle Size
+📌 Notes
+Bootstrapped using Create React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Styling via Tailwind CSS
