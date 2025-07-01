@@ -39,7 +39,7 @@ const AdminDashboard = () => {
       <div className="bg-gray-100 min-h-screen p-6 max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold text-blue-800">🧑‍💼 Admin Dashboard</h1>
+          <h1 className="text-3xl font-bold text-blue-800"> Admin Dashboard</h1>
           <button
             onClick={handleLogout}
             className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition"
