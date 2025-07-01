@@ -1,8 +1,7 @@
 🦷 ENTNT Dental Center – React Patient & Admin Portal
-A responsive dental clinic management web app built with React, React Router, and Tailwind CSS. It supports role-based login, appointment tracking, profile management, and an admin dashboard with KPIs.
-
+Welcome to the ENTNT Dental Center Management System, a modern web application designed for  clinic operations for both administrators and patients. Built using React and Tailwind CSS, this portal features an Use friendly UI, role-based access, and simple appointment and patient tracking – all powered by localStorage.
 ✨ Features
-👨‍⚕️ Admin
+👩‍⚕️ Admin
 Secure login (email & password)
 
 Dashboard with KPIs (total patients, revenue, treatments)
@@ -80,7 +79,9 @@ Clear the following keys: users, patients, incidents
 Refresh the app
 
 👩‍💻 Author
-Assignment developed by Amisha Kumari for ENTNT Dental Center.
+This project was developed by Amisha Kumari as part of the ENTNT Dental Center assignment. It's designed for learning, experimentation, and showcasing frontend skills using modern tools like React and Tailwind CSS.
+
+
 
 📌 Notes
 Bootstrapped using Create React App
